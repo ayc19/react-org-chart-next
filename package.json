@@ -20,7 +20,9 @@
   "author": "Fouad Matin <m@fouad.org>",
   "license": "MIT",
   "dependencies": {
-    "d3": "^3.5.17"
+    "bootstrap": "^4.5.0",
+    "d3": "^3.5.17",
+    "react-bootstrap": "^1.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
