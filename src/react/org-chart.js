@@ -1,6 +1,7 @@
 const { createElement, PureComponent } = require('react')
 const { init } = require('../chart')
 const { divide } = require('lodash')
+//const { MyModal } = require('./myModal')
 
 class OrgChart extends PureComponent {
   render() {
@@ -11,7 +12,8 @@ class OrgChart extends PureComponent {
       id,
     });
 
-    const myModal = createElement('div', {
+    // Temporary for now, bootstrap will be prettier
+    const myModal = createElement('MyModal', {
       id: 'myModal',
       style: {
         backgroundColor: '#fafafa',
@@ -22,6 +24,7 @@ class OrgChart extends PureComponent {
         border: '1px solid #473c3c',
       },
     });
+    //const myModal = <MyModal/> THIS THROWS AN ERROR, WONT COMPILE
     console.log("myModal: ", myModal);
     const outerChart = createElement('div', {
       id: "OuterChart",
