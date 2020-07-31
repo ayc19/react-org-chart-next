@@ -121,7 +121,7 @@ function render(config) {
     .append('text')
     .attr('class', 'description unedited')
     .attr('x', namePos.x)
-    .attr('y', namePos.y + nodePaddingY * 2.2)
+    .attr('y', namePos.y + nodePaddingY * 3)
     .attr('dy', '0.1em')
     .style('font-size', 10)
     .style('cursor', 'pointer')
