@@ -2,6 +2,7 @@ const { wrapText, helpers } = require('../utils')
 const renderLines = require('./render-lines')
 const onClick = require('./on-click')
 const iconLink = require('./components/icon-link')
+const faker = require('faker')
 
 const CHART_NODE_CLASS = 'org-chart-node'
 const PERSON_LINK_CLASS = 'org-chart-person-link'
@@ -109,10 +110,22 @@ function render(config) {
     .attr('x', namePos.x)
     .attr('y', namePos.y + nodePaddingY * 1.2)
     .attr('dy', '0.1em')
-    .style('font-size', 14)
+    .style('font-size', 12)
     .style('cursor', 'pointer')
     .style('fill', titleColor)
     .text(d => d.person.title)
+
+  // Person's Description/teams
+  nodeEnter
+    .append('text')
+    .attr('class', 'description unedited')
+    .attr('x', namePos.x)
+    .attr('y', namePos.y + nodePaddingY * 2.2)
+    .attr('dy', '0.1em')
+    .style('font-size', 10)
+    .style('cursor', 'pointer')
+    .style('fill', titleColor)
+    .text('DESCRIPTION??/')
 
   const heightForTitle = 45 // getHeightForText(d.person.title)
 
@@ -123,7 +136,7 @@ function render(config) {
     .attr('x', namePos.x)
     .attr('y', namePos.y + nodePaddingY + heightForTitle)
     .attr('dy', '.9em')
-    .style('font-size', 14)
+    .style('font-size', 12)
     .style('font-weight', 500)
     .style('cursor', 'pointer')
     .style('fill', reportsColor)
@@ -137,8 +150,8 @@ function render(config) {
     .attr('x', nodePaddingX)
     .attr('y', nodePaddingY)
     .attr('stroke', borderColor)
-    .attr('src', d => d.person.avatar)
-    .attr('xlink:href', d => d.person.avatar)
+    .attr('src', faker.image.avatar())
+    .attr('xlink:href', d => faker.image.avatar())
     .attr('clip-path', 'url(#avatarClip)')
 
   // Person's Department
