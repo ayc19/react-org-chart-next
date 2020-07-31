@@ -1,6 +1,6 @@
 {
   "name": "@ayc19/react-org-chart-fork",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple, high-performance react component for d3 org chart",
   "repository": "https://github.com/ayc19/react-org-chart-next.git",
   "main": "dist/index.js",
