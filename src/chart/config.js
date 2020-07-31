@@ -25,6 +25,7 @@ const backgroundColor = '#fff'
 const borderColor = '#e6e8e9'
 const nameColor = '#c966b5'
 const titleColor = '#617080'
+const descriptionColor = '#4054d9'
 const reportsColor = '#c7ccf5'
 
 // style
@@ -52,6 +53,7 @@ const config = {
   borderColor,
   nameColor,
   titleColor,
+  descriptionColor,
   reportsColor,
   style,
   className,
