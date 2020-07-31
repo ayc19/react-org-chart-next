@@ -5,35 +5,34 @@ const { divide } = require('lodash')
 
 class OrgChart extends PureComponent {
   render() {
-    console.log("in org-chart");
     const { id } = this.props
 
     const newDiv = createElement('div', {
       id,
     });
 
-    // Temporary for now, bootstrap will be prettier
-    const myModal = createElement('MyModal', {
-      id: 'myModal',
-      style: {
-        backgroundColor: '#fafafa',
-        width: 500,
-        height: 500,
-        position: 'absolute',
-        borderRadius: 5,
-        border: '1px solid #473c3c',
-      },
-    });
     //const myModal = <MyModal/> THIS THROWS AN ERROR, WONT COMPILE
-    console.log("myModal: ", myModal);
-    const outerChart = createElement('div', {
-      id: "OuterChart",
-      height: 1000,
-      padding: 15,
-      className: 'App-contentWrapper',
-    },
-    [myModal, newDiv]);
-    return outerChart;
+    // bootstrap alternative for modal
+    // const myModal = createElement('MyModal', {
+    //   id: 'myModal',
+    //   style: {
+    //     backgroundColor: '#fafafa',
+    //     width: 500,
+    //     height: 500,
+    //     position: 'absolute',
+    //     borderRadius: 5,
+    //     border: '1px solid #473c3c',
+    //   },
+    // });
+    // return outerChart instead of newDiv
+    // const outerChart = createElement('div', {
+    //   id: "OuterChart",
+    //   height: 1000,
+    //   padding: 15,
+    //   className: 'App-contentWrapper',
+    // },
+    // [myModal, newDiv]);
+    return newDiv;
   }
 
   static defaultProps = {
