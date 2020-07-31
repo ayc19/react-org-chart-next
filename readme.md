@@ -4,8 +4,6 @@
 
 This repository is an effort to make it work with `es6` `import`.
 
-new line
-
 It can be deprecated or private-used by the owner or the organization owner.
 
 ### Usage
