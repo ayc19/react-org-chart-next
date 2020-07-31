@@ -2,6 +2,8 @@
 
 ### Note
 
+This is a version of @keymastervn/react-org-chart-next to be used as an npm package
+
 This repository is an effort to make it work with `es6` `import`.
 
 It can be deprecated or private-used by the owner or the organization owner.
