@@ -25,6 +25,7 @@ function render(config) {
     backgroundColor,
     nameColor,
     titleColor,
+    descriptionColor,
     reportsColor,
     borderColor,
     avatarWidth,
@@ -124,8 +125,8 @@ function render(config) {
     .attr('dy', '0.1em')
     .style('font-size', 10)
     .style('cursor', 'pointer')
-    .style('fill', titleColor)
-    .text('DESCRIPTION??/')
+    .style('fill', descriptionColor)
+    .text(d => d.person.description)
 
   const heightForTitle = 45 // getHeightForText(d.person.title)
 
