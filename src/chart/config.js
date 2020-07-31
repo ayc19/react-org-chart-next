@@ -23,9 +23,9 @@ const lineDepthY = 120 /* Height of the line for child nodes */
 // Colors
 const backgroundColor = '#fff'
 const borderColor = '#e6e8e9'
-const nameColor = '#222d38'
+const nameColor = '#c966b5'
 const titleColor = '#617080'
-const reportsColor = '#92A0AD'
+const reportsColor = '#c7ccf5'
 
 // style
 const style = {
